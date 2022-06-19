@@ -19,11 +19,12 @@ public class StringQueue implements IQueue {
 
   @Override
   public boolean offer(String obj) {
-    if (elements.size() != maxSize)
+    if (elements.size() != maxSize){
       elements.add(obj);
-    else
+    }
+    else{
       return false;
-
+    }
     return true;
   }
 
@@ -67,5 +68,4 @@ public class StringQueue implements IQueue {
 
     return element;
   }
-
 }
